@@ -37,18 +37,20 @@ export default function HeroSection() {
         {/* Headline */}
         <motion.h1
           {...fade(0.15)}
-          className="text-[clamp(48px,8vw,80px)] font-black leading-none tracking-tight text-on-background"
+          className="text-[clamp(52px,9vw,88px)] font-black leading-none tracking-tight text-on-background flex flex-wrap items-center justify-center gap-x-4"
         >
-          לשלוט בעתיד ה<span className="text-primary">פיננסים</span>
+          <span>הזהב</span>
+          <span className="text-primary drop-shadow-[0_0_40px_rgba(255,184,116,0.5)]">₿</span>
+          <span>החדש</span>
         </motion.h1>
 
         {/* Subtitle */}
         <motion.p
           {...fade(0.25)}
-          className="text-lg text-on-surface-variant max-w-[700px] mx-auto leading-relaxed"
+          className="text-xl text-on-surface-variant max-w-[680px] mx-auto leading-relaxed font-medium"
         >
-          הצטרפו לאקדמיה המובילה ללימודי ביטקוין. רכשו ידע מעמיק, הבנה טכנולוגית
-          וכלים מעשיים לעצמאות כלכלית — בעברית, בפשטות, ללא שטויות.
+          בוא ללמוד על הנכס שיצור מערכת פיננסית חדשה והוגנת,
+          הבינו לעומק כיצד הוא עובד!
         </motion.p>
 
         {/* CTAs */}
