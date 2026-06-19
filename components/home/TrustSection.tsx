@@ -9,7 +9,7 @@ export default function TrustSection() {
     <section className="py-12 border-y border-outline-variant/20 bg-surface-container-lowest/50 backdrop-blur-sm overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-4 md:px-8 text-center mb-8">
         <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">
-          בוגרינו עובדים בחברות המובילות בתעשייה
+          המידע מבוסס על המקורות האמינים ביותר בתעשייה
         </p>
       </div>
 

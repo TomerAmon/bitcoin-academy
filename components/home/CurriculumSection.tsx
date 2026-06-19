@@ -9,25 +9,25 @@ const courses = [
     icon: "school",
     title: "יסודות הביטקוין",
     description:
-      "מבוא מקיף לרשת הביטקוין, היסטוריה של הכסף, קריפטוגרפיה בסיסית והבנת המנגנון הכלכלי.",
+      "היסטוריה של הכסף, כיצד עובדת הבלוקצ'יין, מהי הצפנה ולמה ביטקוין שונה מכל מטבע שהיה לפניו.",
     href: "/learn",
     featured: false,
     tag: "מתחיל",
   },
   {
     icon: "account_balance",
-    title: "ריבונות פיננסית",
+    title: "כסף, אינפלציה ושקל",
     description:
-      "אסטרטגיות החזקה ארוכות טווח, Cold Storage, ניהול סיכונים והבנת המאקרו-כלכלה של עידן הביטקוין.",
+      "מה גורם לכסף לאבד ערך? הבנת מדיניות הדפסת הכסף, השפעתה על הכלכלה הישראלית, ולמה 21 מיליון זה חשוב.",
     href: "/learn",
     featured: true,
-    tag: "פופולרי",
+    tag: "מומלץ",
   },
   {
     icon: "security",
-    title: "אבטחה דיגיטלית",
+    title: "החזקה בטוחה",
     description:
-      "סדנה מעשית לאבטחת נכסים דיגיטליים, ארנקי חומרה, ניהול מפתחות פרטיים והגנה מפני מתקפות.",
+      "ארנקים, מפתחות פרטיים, Cold Storage ו-Seed Phrase — כל מה שצריך לדעת כדי להחזיק ביטקוין בצורה עצמאית ובטוחה.",
     href: "/learn",
     featured: false,
     tag: "מתקדם",
@@ -90,10 +90,10 @@ export default function CurriculumSection() {
           className="text-center space-y-4"
         >
           <h2 className="text-[36px] font-bold text-on-background leading-tight tracking-tight">
-            מסלולי הלימוד שלנו
+            מה תלמד כאן
           </h2>
           <p className="text-lg text-on-surface-variant max-w-[600px] mx-auto leading-relaxed">
-            תוכניות הכשרה מקיפות המותאמות לרמות ידע שונות, מהבסיס ועד למומחיות טכנית.
+            תוכן חינמי ומעמיק בעברית — מהיסודות ועד להבנה אמיתית של הכסף, הכלכלה והטכנולוגיה.
           </p>
         </motion.div>
 
@@ -147,7 +147,7 @@ export default function CurriculumSection() {
                   href={course.href}
                   className="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all z-10 text-sm"
                 >
-                  למידע נוסף
+                  התחל ללמוד
                   <span className="material-symbols-outlined" style={{ fontSize: "16px" }}>arrow_back</span>
                 </Link>
               </TiltCard>

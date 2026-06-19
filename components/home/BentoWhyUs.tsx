@@ -3,9 +3,9 @@
 import { motion } from "framer-motion";
 
 const highlights = [
-  { icon: "check_circle", text: "מנטורים מומחים בעלי ניסיון מעשי מוכח." },
-  { icon: "check_circle", text: "גישה לקהילת בוגרים סגורה ואיכותית." },
-  { icon: "check_circle", text: "תוכן מבוסס Bitcoin Standard ו-Grokking Bitcoin." },
+  { icon: "check_circle", text: "תוכן חינמי לחלוטין — ללא תשלום, ללא הרשמה." },
+  { icon: "check_circle", text: "מבוסס על Bitcoin Standard, Grokking Bitcoin ו-Bitcoin.org." },
+  { icon: "check_circle", text: "מוסבר בעברית פשוטה, בלי ז'רגון מיותר." },
 ];
 
 const enter = (delay = 0) => ({
@@ -42,12 +42,11 @@ export default function BentoWhyUs() {
             </div>
             <div className="relative z-10 max-w-[560px]">
               <h2 className="text-[36px] font-bold text-on-background mb-6 leading-tight tracking-tight">
-                למה ללמוד איתנו?
+                למה הזהב החדש?
               </h2>
               <p className="text-lg text-on-surface-variant mb-8 leading-relaxed">
-                אנו מספקים סביבה לימודית ברמה גבוהה, המשלבת ידע תיאורטי מעמיק עם
-                פרקטיקה עדכנית. הקהילה שלנו מורכבת מאנשי מקצוע, משקיעים ויזמים
-                הדוחפים את התעשייה קדימה.
+                האתר נבנה כדי שכל ישראלי יוכל להבין מה זה ביטקוין באמת — לא שיווק,
+                לא הבטחות תשואה. רק הסבר ישר ומבוסס על העובדות הכלכליות והטכניות.
               </p>
               <ul className="space-y-4">
                 {highlights.map((h, i) => (
@@ -83,9 +82,9 @@ export default function BentoWhyUs() {
             >
               star
             </motion.span>
-            <h3 className="text-xl font-bold text-on-background">הסמכה מקצועית</h3>
+            <h3 className="text-xl font-bold text-on-background">ידע עצמאי</h3>
             <p className="text-sm text-on-surface-variant mt-2 leading-relaxed">
-              תעודה מוכרת בתעשייה בסיום המסלול.
+              לא תלוי בבנק, ביועץ השקעות או בגורם שלישי.
             </p>
           </motion.div>
 
@@ -102,9 +101,9 @@ export default function BentoWhyUs() {
             >
               terminal
             </motion.span>
-            <h3 className="text-xl font-bold text-on-background">למידה מעשית</h3>
+            <h3 className="text-xl font-bold text-on-background">קריאה בקצב שלך</h3>
             <p className="text-sm text-on-surface-variant mt-2 leading-relaxed">
-              תרגולים וסימולציות חיות בסביבה בטוחה.
+              כל השיעורים פתוחים תמיד — תתקדם מתי שנוח לך.
             </p>
           </motion.div>
         </div>
