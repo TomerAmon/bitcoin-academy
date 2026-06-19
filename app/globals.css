@@ -2,10 +2,52 @@
 
 @theme inline {
   --font-sans: var(--font-heebo), system-ui, sans-serif;
-  --color-bitcoin: #F7931A;
+
+  /* Surfaces */
+  --color-background: #131318;
+  --color-surface: #131318;
+  --color-surface-dim: #131318;
+  --color-surface-bright: #39383e;
+  --color-surface-container-lowest: #0e0e13;
+  --color-surface-container-low: #1b1b20;
+  --color-surface-container: #1f1f25;
+  --color-surface-container-high: #2a292f;
+  --color-surface-container-highest: #35343a;
+
+  /* Text */
+  --color-on-background: #e4e1e9;
+  --color-on-surface: #e4e1e9;
+  --color-on-surface-variant: #dbc2ae;
+
+  /* Borders */
+  --color-outline: #a38d7b;
+  --color-outline-variant: #554335;
+
+  /* Primary — warm peach-orange */
+  --color-primary: #ffb874;
+  --color-primary-container: #f7931a;
+  --color-on-primary: #4b2800;
+  --color-on-primary-container: #603500;
+  --color-primary-fixed: #ffdcbf;
+
+  /* Secondary */
+  --color-secondary: #fff9ef;
+  --color-secondary-container: #ffdb3c;
+  --color-secondary-fixed: #ffe16d;
+  --color-on-secondary: #3a3000;
+
+  /* Tertiary — green accent */
+  --color-tertiary: #45dfa4;
+  --color-tertiary-container: #0fc28a;
+
+  /* Error */
+  --color-error: #ffb4ab;
+  --color-error-container: #93000a;
+
+  /* Legacy */
+  --color-bitcoin: #f7931a;
   --color-bitcoin-dark: #e07b10;
-  --color-gold: #FFD700;
-  --color-surface: #111118;
+  --color-gold: #ffd700;
   --color-border: #1e1e2e;
 }
 
@@ -19,5 +61,59 @@ html {
 
 body {
   background-color: #0a0a0f;
-  color: #f8f8f8;
+  color: #e4e1e9;
+}
+
+.glass-panel {
+  background: rgba(19, 19, 24, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(85, 67, 53, 0.3);
+}
+
+.glow-effect {
+  box-shadow: 0 20px 40px -15px rgba(247, 147, 26, 0.2);
+}
+
+.bg-glass {
+  background: rgba(17, 17, 24, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(30, 30, 46, 0.5);
+}
+
+.card-level-1 {
+  background-color: #111118;
+  border: 1px solid #1e1e2e;
+}
+
+.glow-primary {
+  box-shadow: 0 20px 40px -15px rgba(247, 147, 26, 0.2);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(30, 30, 46, 0.3);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #554335;
+  border-radius: 4px;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }

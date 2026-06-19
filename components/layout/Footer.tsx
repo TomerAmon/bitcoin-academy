@@ -1,33 +1,67 @@
 import Link from "next/link";
 import BitcoinLogo from "@/components/ui/BitcoinLogo";
 
-const links = [
-  { href: "/learn", label: "למד" },
-  { href: "/price", label: "מחיר חי" },
-  { href: "/glossary", label: "מילון" },
-  { href: "/faq", label: "שאלות נפוצות" },
-];
-
 export default function Footer() {
   return (
-    <footer className="bg-[#060609] border-t border-[#1e1e2e] text-gray-500 py-12 px-4">
-      <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
-        <div className="flex items-center gap-2 text-white font-bold text-sm">
-          <BitcoinLogo size={20} />
-          <span>הזהב החדש</span>
+    <footer className="bg-surface-container-lowest border-t border-outline-variant/20 py-20 w-full">
+      <div className="max-w-[1280px] mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="col-span-1 md:col-span-2 space-y-4">
+          <div className="flex items-center gap-2 text-primary font-black text-xl">
+            <BitcoinLogo size={24} />
+            הזהב החדש
+          </div>
+          <p className="text-on-surface-variant text-sm max-w-sm leading-relaxed">
+            © {new Date().getFullYear()} הזהב החדש. כל הזכויות שמורות.
+            חינוך ריבוני לעידן הדיגיטלי — אין כאן ייעוץ פיננסי.
+          </p>
         </div>
 
-        <nav className="flex items-center gap-6 text-sm">
-          {links.map((l) => (
-            <Link key={l.href} href={l.href} className="hover:text-white transition-colors">
-              {l.label}
-            </Link>
-          ))}
-        </nav>
+        <div className="space-y-3">
+          <h4 className="font-bold text-on-surface text-sm">משפטי</h4>
+          <ul className="space-y-2">
+            <li>
+              <a href="#" className="text-on-surface-variant hover:text-tertiary transition-colors text-sm">
+                מדיניות פרטיות
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-on-surface-variant hover:text-tertiary transition-colors text-sm">
+                תנאי שימוש
+              </a>
+            </li>
+          </ul>
+        </div>
 
-        <p className="text-xs text-gray-700">
-          © {new Date().getFullYear()} הזהב החדש — אין כאן ייעוץ פיננסי
-        </p>
+        <div className="space-y-3">
+          <h4 className="font-bold text-on-surface text-sm">האקדמיה</h4>
+          <ul className="space-y-2">
+            <li>
+              <Link href="/learn" className="text-on-surface-variant hover:text-tertiary transition-colors text-sm">
+                קורסים
+              </Link>
+            </li>
+            <li>
+              <Link href="/price" className="text-on-surface-variant hover:text-tertiary transition-colors text-sm">
+                מחיר חי
+              </Link>
+            </li>
+            <li>
+              <Link href="/glossary" className="text-on-surface-variant hover:text-tertiary transition-colors text-sm">
+                מילון מונחים
+              </Link>
+            </li>
+            <li>
+              <Link href="/faq" className="text-on-surface-variant hover:text-tertiary transition-colors text-sm">
+                שאלות נפוצות
+              </Link>
+            </li>
+            <li>
+              <Link href="/chat" className="text-on-surface-variant hover:text-tertiary transition-colors text-sm">
+                ישראביט AI
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   );
